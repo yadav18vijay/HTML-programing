@@ -1,0 +1,669 @@
+/* Link to Helvetica font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Helvetica&display=swap');
+
+/* Define K2D font using @font-face */
+@font-face {
+  font-family: 'K2D';
+  src: url('path/to/k2d.woff2') format('woff2'), /* Update the path */
+       url('path/to/k2d.woff') format('woff'); /* Update the path */
+  font-weight: normal;
+  font-style: normal;
+}
+/* Resetting default styles */
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+.custom-text {
+  font-family: 'K2D', sans-serif; /* Use K2D font */
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+/* Navigation styles */
+nav ul {
+  position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    height: 8vh;
+    padding: 0vw 8vw;
+    z-index: 44;
+    
+}
+
+.cntr-nav{
+  display: flex;
+  gap: 3vw;
+  justify-content: space-between;
+  
+
+}
+
+nav a {
+  display: inline;
+  margin-right: 20px;
+
+  
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin-top: 3vh;
+  
+}
+.shop {
+  background-color:#313da7;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none; /* Remove underline from link */
+  margin-top: 1vh;
+}
+
+/* Main content styles */
+main {
+  margin: 0 auto; /* Center the content */
+  padding: 0;
+}
+
+/* Section One styles */
+.one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lft-one {
+  text-align: center;
+  padding-left: 10vh;
+}
+.lft-one h1{
+  font-size: 36px;
+}
+.lft-one h2{
+  font-size: 36px;
+}
+.lft-one p{
+  font-size: 18px;
+}
+.buy-button {
+  background-color: #313da7;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.rght-one {
+  position: relative;
+}
+
+#bottles {
+  position: relative;
+  z-index: 1;
+}
+
+#bluebg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cont {
+  height: 12vh;
+  width: 100%;
+  background-color: rgb(10, 6, 6);
+  text-align: center;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  position: relative; /* Add position: relative */
+  z-index: 1; /* Add a higher z-index */
+}
+
+.nowrap {
+  white-space: nowrap;
+  color: white;
+  font-size: 54px;
+  margin-top: 2vh;
+  /* Remove position: absolute; */
+  transition: all 0.9s ease;
+  /* Remove top, right, width, margin-top */
+}
+/* Section Two styles */
+.About {
+  display: flex;
+  padding: 0; /* Removed unnecessary property */
+}
+
+.lft-two,
+.rght-two {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1vh;
+  width: 100%; /* Adjusted width */
+  height: 100%; /* Adjusted height */
+}
+
+.rght-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3px;
+  align-items: first baseline;
+  margin-right: 290px; /* Adjusted margin */
+  margin-top: 20vh;
+}
+
+.sub-section {
+  text-align: left;
+  align-items: first baseline;
+}
+
+.sub-section .gif img {
+  max-width: 20%;
+  align-items: first baseline;
+}
+
+.lft-two {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#blue,
+#figure,
+#bottle {
+  position: absolute;
+}
+
+#blue {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#figure {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s;
+}
+
+#bottle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  height: 35vh;
+}
+
+/* Section Three styles */
+.FromHimalaya {
+  display: flex;
+  height: 100vh;
+  background-image: url('/assets/bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.lft-three,
+.rght-three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0vh;
+  width: 50%;
+  height: 100%;
+  flex: 1;
+}
+
+.lft-three h4 {
+  color: black;
+  font-size: 36px;
+  width: 40%;
+}
+
+.lft-three p {
+  font-size: 18px;
+  color: black;
+  width: 40%;
+}
+
+/* Section Four styles */
+.four {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url('/assets/fvddfs.png');
+  background-size: cover;
+  background-position: center;
+  padding-left: 160px;
+}
+
+.left-four {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 30vh;
+  gap: 13px;
+}
+
+.section-one {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.card {
+  width: 200px;
+  height: 60vh;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.column {
+  flex: 1;
+  float: right;
+  align-items: first baseline;
+  justify-content: center;
+  margin-bottom: 60vh;
+  margin-top: 15vh;
+}
+
+.column-right {
+  padding-left: 20px;
+  margin-top: 16vh;
+}
+
+.grid-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 8cm);
+  grid-template-rows: repeat(3, 2cm);
+  grid-gap: 8px;
+}
+.grid-box {
+  width: 6cm;
+  height: 2cm;
+  overflow: hidden;
+  justify-content: space-between;
+  
+}
+
+.grid-box img {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  justify-content: space-between;
+  gap: 2vh;
+  
+  
+}
+.button {
+  background-color: white;
+  padding: 0px 0px;
+  border-radius: 0px;
+  text-decoration: none;
+  z-index: 1;
+  
+}
+.five {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: white;
+}
+
+.left-section,
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1vh;
+  width: 50%;
+  height: 100%;
+}
+
+.left-section h4 {
+  color: black;
+  font-size: 40px;
+  width: 30%;
+}
+
+.left-section p {
+  font-size: 16px;
+  color: black;
+  width: 30%;
+}
+
+.buy-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #313da7;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.right-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#blue2,
+#shape2,
+#blackbottle {
+  position: absolute;
+}
+
+#blue2 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#shape2 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  height: 30vh;
+  width: 45%;
+}
+
+#blackbottle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  height: 35vh;
+}
+
+/* Section Six styles */
+.six {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: white;
+}
+
+.left-section,
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1vh;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+}
+.left-section h4 {
+  color: black;
+  font-size: 140px;
+  width: 30%;
+}
+
+.right-section h4 {
+  color: black;
+  font-size: 42px;
+  width: 30%;
+}
+
+.left-section p {
+  font-size: 17px;
+  color: black;
+  width: 30%;
+}
+
+.right-section p {
+  font-size: 17px;
+  color: black;
+  width: 30%;
+}
+
+.Customize-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #313da7;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+/* Section Seven styles */
+.seven {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: white;
+}
+
+.left-section,
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1vh;
+  width: 50%;
+  height: 100%;
+}
+
+.left-section h4 {
+  color: black;
+  font-size: 44px;
+  width: 30%;
+}
+
+.right-section {
+  color: black;
+  font-size: 18px;
+  width: 35%;
+}
+
+.left-section p {
+  font-size: 18px;
+  color: black;
+  width: 35%;
+}
+
+.Advertise-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #313da7;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+/* FAQ styles */
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question {
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+.question span {
+  flex: 1;
+}
+
+.arrow-container {
+  display: inline-block;
+  
+}
+.arrow {
+  width: 24px;
+  height: 24px;
+  fill: #000;
+}
+
+.answer {
+  display: none;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.open .arrow {
+  transform: rotate(180deg);
+}
+
+.open .answer {
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .faq-container h6 {
+    font-size: 40px;
+  }
+}
+
+/* Section Eight styles */
+#eight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 60vh;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#eight h2 {
+  font-size: 44px;
+  margin: 10px 0;
+}
+
+#eight p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#eight button {
+  font-size: 18px;
+  background-color: #313da7;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+#eight button:hover {
+  background-color: #313da7;
+}
+
+/* Footer styles */
+footer {
+  background-color: white;
+  padding-left: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.sub-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-section p {
+  margin: 5px 0;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons img {
+  margin-right: 5px;
+  size: 2vh;
+}
+.button {
+  background-color: white;
+  padding: 0px 0px;
+  border-radius: 0px;
+  text-decoration: none;
+  z-index: 1;
+
+}
+
+.store-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.store-button img {
+  width: 150px;
+  height: auto;
+}
+.store-buttons {
+  background-color: white;
+  padding: 0px 0px;
+  border-radius: 0px;
+  text-decoration: none;
+  z-index: 1;
+}
